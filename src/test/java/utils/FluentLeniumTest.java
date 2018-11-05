@@ -3,8 +3,7 @@ import org.apache.commons.exec.OS;
 import org.fluentlenium.adapter.junit.FluentTest;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+
 
 import java.io.File;
 import java.util.Objects;
@@ -41,12 +40,11 @@ public class FluentLeniumTest extends FluentTest {
                 //chrome driver ver 2.42 loaded from src->main->resources
 
                 try{
-                    System.out.println(chromeDriverFile.getAbsolutePath());
+                    System.out.println(System.getProperty("chromedriver"));
                     System.setProperty("webdriver.chrome.driver", chromeDriverFile.getAbsolutePath());
                 }catch (NullPointerException e){
                     throw new RuntimeException(e);
                 }
-
 
 
                 break;
