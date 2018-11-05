@@ -11,9 +11,7 @@ public class WarenkorbPage extends FluentPage {
     private NischenDueftePage nischenDueftePage;
 
     public boolean checkIftheItemAddedExists(String itemDetails){
-        System.out.println(itemDetails + "******");
         String itemXpath = String.format("//div[@class='cart-details']//a[contains(text(), '%s')]", itemDetails);
-        System.out.println(itemXpath);
         return find(By.xpath(itemXpath)).first().displayed();
     }
 }
