@@ -7,7 +7,7 @@ import utils.FluentLeniumTest;
 import static junit.framework.TestCase.assertTrue;
 
 
-public class AddNichePerfumeTest extends FluentLeniumTest {
+public class AddNichePerfumeTest1 extends FluentLeniumTest {
 
     @Page
     private HomePage homePage;
