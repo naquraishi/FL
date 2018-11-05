@@ -31,7 +31,6 @@ public class AddNichePerfumeTest extends FluentLeniumTest {
     @Test
     public void test1() {
         homePage.go();
-        window().maximize();
         homePage.parfumPageSelection();
         parfumPage.herrenParfumSelection();
         herrenParfumPage.nischenDüfteSelection();
