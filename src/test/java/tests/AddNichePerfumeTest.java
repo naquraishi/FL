@@ -37,6 +37,9 @@ public class AddNichePerfumeTest extends FluentLeniumTest {
         nischenDueftePage.niedrigsterOptionSelection();
         String itemDetails =  nischenDueftePage.addItemName();
         nischenDueftePage.niedrigsterParfumSelection();
+        if (alert().present()){
+            alert().dismiss();
+        }
         addToKartPage.addToCartClick();
         addToKartPage.viewCartClick();
         assertTrue(warenkorbPage.checkIftheItemAddedExists(itemDetails));
@@ -48,6 +51,9 @@ public class AddNichePerfumeTest extends FluentLeniumTest {
         nischenDueftePage.niedrigsterOptionSelection();
         String itemDetails =  nischenDueftePage.addItemName();
         nischenDueftePage.niedrigsterParfumSelection();
+        if (alert().present()){
+            alert().dismiss();
+        }
         addToKartPage.addToCartClick();
         addToKartPage.viewCartClick();
         assertTrue(warenkorbPage.checkIftheItemAddedExists(itemDetails));
