@@ -20,6 +20,6 @@ before_script:
 
 script:
     - whereis google-chrome-stable
-    - sudo chmod +x /home/travis/build/naquraishi/FL/target/classes/chromedriver
+    - sudo chmod +x /home/travis/build/naquraishi/FL/resources/chromedriver
     - mvn compile
     - mvn test
