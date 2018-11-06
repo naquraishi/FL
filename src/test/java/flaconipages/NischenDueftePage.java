@@ -18,7 +18,6 @@ public class NischenDueftePage extends FluentPage{
 
     public String addItemName(){
         String[] parts = itemsList.first().text().split("\n");
-        System.out.println(parts[1]);
         return parts[1];
     }
 

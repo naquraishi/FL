@@ -1,7 +1,6 @@
 flaconipages\HerrenParfumPage.class
 utils\FluentLeniumTest.class
 flaconipages\ParfumPage.class
-fltests\T2AddNichePerfumeTest.class
 flaconipages\WarenkorbPage.class
 utils\MyProperties.class
 flaconipages\NischenDueftePage.class

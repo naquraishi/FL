@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="fltests.T1AddNichePerfumeTest" time="35.81" errors="1" skipped="0">
+<testsuite tests="1" failures="0" name="fltests.T1AddNichePerfumeTest" time="62.518" errors="1" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\bin"/>
@@ -46,7 +46,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_171\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -65,27 +65,24 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="fltests.T1AddNichePerfumeTest" name="test1" time="35.81">
-    <error message="Element By.xpath: //span[contains(text(), &apos;LÃ¶schen&apos;)] (first) (Lazy Element) is not present
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+  <testcase classname="fltests.T1AddNichePerfumeTest" name="test1" time="62.518">
+    <error message="Expected condition failed: Element By.xpath: //a[contains(text(), &apos;Warenkorb Ansehen&apos;)] (first) (Lazy Element) is not clickable (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;PN-HR-NB17&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
-Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Element By.xpath: //span[contains(text(), &apos;LÃ¶schen&apos;)] (first) (Lazy Element) is not present
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Driver info: driver.version: unknown" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: Element By.xpath: //a[contains(text(), &apos;Warenkorb Ansehen&apos;)] (first) (Lazy Element) is not clickable (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;PN-HR-NB17&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
 Driver info: driver.version: unknown
-	at org.fluentlenium.core.domain.ElementUtils.noSuchElementException(ElementUtils.java:25)
-	at org.fluentlenium.core.proxy.AbstractLocatorHandler.noSuchElement(AbstractLocatorHandler.java:167)
-	at org.fluentlenium.core.proxy.ComponentHandler.getLocatorResultImpl(ComponentHandler.java:73)
-	at org.fluentlenium.core.proxy.ComponentHandler.getLocatorResultImpl(ComponentHandler.java:17)
-	at org.fluentlenium.core.proxy.AbstractLocatorHandler.getLocatorResult(AbstractLocatorHandler.java:140)
-	at org.fluentlenium.core.proxy.AbstractLocatorHandler.invoke(AbstractLocatorHandler.java:270)
-	at org.fluentlenium.core.proxy.ComponentHandler.invoke(ComponentHandler.java:98)
-	at com.sun.proxy.$Proxy18.click(Unknown Source)
-	at org.fluentlenium.core.domain.FluentWebElement.click(FluentWebElement.java:113)
-	at flaconipages.WarenkorbPage.removeItemFromTheCart(WarenkorbPage.java:25)
-	at fltests.T1AddNichePerfumeTest.test1(T1AddNichePerfumeTest.java:43)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:315)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at org.fluentlenium.core.wait.FluentWait.untilPredicate(FluentWait.java:144)
+	at org.fluentlenium.core.conditions.wait.WaitConditionInvocationHandler.until(WaitConditionInvocationHandler.java:139)
+	at org.fluentlenium.core.conditions.wait.WaitConditionInvocationHandler.until(WaitConditionInvocationHandler.java:170)
+	at org.fluentlenium.core.conditions.wait.WaitConditionInvocationHandler.waitForCondition(WaitConditionInvocationHandler.java:207)
+	at org.fluentlenium.core.conditions.wait.WaitConditionInvocationHandler.invoke(WaitConditionInvocationHandler.java:185)
+	at com.sun.proxy.$Proxy23.clickable(Unknown Source)
+	at flaconipages.AddToCartPage.viewCartClick(AddToCartPage.java:22)
+	at fltests.T1AddNichePerfumeTest.test1(T1AddNichePerfumeTest.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -124,9 +121,9 @@ Driver info: driver.version: unknown
     <system-out>null
 Macadamia Professional
 </system-out>
-    <system-err>Starting ChromeDriver 2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e) on port 42510
+    <system-err>Starting ChromeDriver 2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e) on port 49076
 Only local connections are allowed.
-Nov 06, 2018 4:36:38 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Nov 06, 2018 5:07:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
 </system-err>
   </testcase>

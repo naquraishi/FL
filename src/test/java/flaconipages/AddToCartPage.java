@@ -6,8 +6,8 @@ import java.util.concurrent.TimeUnit;
 
 public class AddToCartPage extends FluentPage {
 
-//    @FindBy(xpath = "(//button[@title='In den Warenkorb'])[2]")
-    @FindBy(xpath = "(//div[@id='purchasepanel']/ul[@class='product-list']//button[@title='In den Warenkorb'])[1]")
+    @FindBy(xpath = "(//button[@title='In den Warenkorb'])[1]")
+    //@FindBy(xpath = "(//div[@id='purchasepanel']/ul[@class='product-list']//button[@title='In den Warenkorb'])[1]")
     private FluentWebElement addToCartButton;
 
     @FindBy(xpath = "//a[contains(text(), 'Warenkorb Ansehen')]")
