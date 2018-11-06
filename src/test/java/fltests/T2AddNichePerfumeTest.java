@@ -1,6 +1,7 @@
 package fltests;
 import flaconipages.*;
 import org.fluentlenium.core.annotation.Page;
+import org.junit.Assert;
 import org.junit.Test;
 import utils.FluentLeniumTest;
 
@@ -10,7 +11,6 @@ import static junit.framework.TestCase.assertTrue;
 public class T2AddNichePerfumeTest extends FluentLeniumTest {
 
     @Page
-
     private NischenDueftePage nischenDueftePage;
 
     @Page
@@ -27,7 +27,9 @@ public class T2AddNichePerfumeTest extends FluentLeniumTest {
         nischenDueftePage.niedrigsterParfumSelection();
         addToKartPage.addToCartClick();
         addToKartPage.viewCartClick();
-        assertTrue(warenkorbPage.checkIftheItemAddedExists(itemDetails));
+        boolean itemExists = warenkorbPage.checkIftheItemAddedExists(itemDetails);
+        warenkorbPage.removeItemFromTheCart();
+        Assert.assertTrue(itemExists);
     }
 
 }

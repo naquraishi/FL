@@ -39,7 +39,9 @@ public class T1AddNichePerfumeTest extends FluentLeniumTest {
         nischenDueftePage.niedrigsterParfumSelection();
         addToCartPage.addToCartClick();
         addToCartPage.viewCartClick();
-        assertTrue(warenkorbPage.checkIftheItemAddedExists(itemDetails));
+        boolean itemExists = warenkorbPage.checkIftheItemAddedExists(itemDetails);
+        warenkorbPage.removeItemFromTheCart();
+        assertTrue(itemExists);
     }
 
 }

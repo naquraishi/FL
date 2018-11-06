@@ -12,6 +12,9 @@ public class AddToCartPage extends FluentPage {
     @FindBy(xpath = "//a[contains(text(), 'Warenkorb Ansehen')]")
     private FluentWebElement viewCartButton;
 
+    @FindBy(xpath = "//div[@class='cookie-box__content']")
+    private FluentWebElement cookieBox;
+
     public void addToCartClick() {
         await().atMost(10, TimeUnit.SECONDS).until(addToCartButton).displayed();
         addToCartButton.click();
@@ -20,5 +23,11 @@ public class AddToCartPage extends FluentPage {
     public void viewCartClick() {
         await().atMost(10, TimeUnit.SECONDS).until(viewCartButton).clickable();
         viewCartButton.click();
+    }
+
+    public void cookieBoxDismiss(){
+        if(cookieBox.displayed()){
+            alert().dismiss();
+        }
     }
 }
