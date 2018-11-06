@@ -6,14 +6,12 @@ import java.util.concurrent.TimeUnit;
 
 public class AddToCartPage extends FluentPage {
 
-    @FindBy(xpath = "(//button[@title='In den Warenkorb'])[2]")
+//    @FindBy(xpath = "(//button[@title='In den Warenkorb'])[2]")
+    @FindBy(xpath = "(//button[@class='button-primary loaderbox-trigger loaderbox-submit-form'])[1]")
     private FluentWebElement addToCartButton;
 
     @FindBy(xpath = "//a[contains(text(), 'Warenkorb Ansehen')]")
     private FluentWebElement viewCartButton;
-
-    @FindBy(xpath = "//div[@class='cookie-box__content']")
-    private FluentWebElement cookieBox;
 
     public void addToCartClick() {
         await().atMost(10, TimeUnit.SECONDS).until(addToCartButton).displayed();
@@ -25,9 +23,5 @@ public class AddToCartPage extends FluentPage {
         viewCartButton.click();
     }
 
-    public void cookieBoxDismiss(){
-        if(cookieBox.displayed()){
-            alert().dismiss();
-        }
-    }
+
 }

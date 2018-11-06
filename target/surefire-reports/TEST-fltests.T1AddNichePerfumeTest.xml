@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="fltests.T1AddNichePerfumeTest" time="32.378" errors="1" skipped="0">
+<testsuite tests="1" failures="0" name="fltests.T1AddNichePerfumeTest" time="35.81" errors="1" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\bin"/>
@@ -65,7 +65,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="fltests.T1AddNichePerfumeTest" name="test1" time="32.378">
+  <testcase classname="fltests.T1AddNichePerfumeTest" name="test1" time="35.81">
     <error message="Element By.xpath: //span[contains(text(), &apos;LÃ¶schen&apos;)] (first) (Lazy Element) is not present
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
@@ -124,9 +124,9 @@ Driver info: driver.version: unknown
     <system-out>null
 Macadamia Professional
 </system-out>
-    <system-err>Starting ChromeDriver 2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e) on port 13457
+    <system-err>Starting ChromeDriver 2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e) on port 42510
 Only local connections are allowed.
-Nov 06, 2018 3:38:58 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Nov 06, 2018 4:36:38 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
 </system-err>
   </testcase>

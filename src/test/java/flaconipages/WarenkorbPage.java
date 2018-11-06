@@ -6,7 +6,7 @@ import org.fluentlenium.core.domain.FluentList;
 import org.fluentlenium.core.domain.FluentWebElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
-
+import static org.fluentlenium.core.filter.MatcherConstructor.regex;
 
 public class WarenkorbPage extends FluentPage {
 

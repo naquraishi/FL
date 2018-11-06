@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: fltests.T2AddNichePerfumeTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 16.27 sec <<< FAILURE!
-test2(fltests.T2AddNichePerfumeTest)  Time elapsed: 16.268 sec  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 16.724 sec <<< FAILURE!
+test2(fltests.T2AddNichePerfumeTest)  Time elapsed: 16.718 sec  <<< ERROR!
 org.openqa.selenium.NoSuchElementException: Element By.xpath: //span[contains(text(), 'Löschen')] (first) (Lazy Element) is not present
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
@@ -18,7 +18,7 @@ Driver info: driver.version: unknown
 	at com.sun.proxy.$Proxy18.click(Unknown Source)
 	at org.fluentlenium.core.domain.FluentWebElement.click(FluentWebElement.java:113)
 	at flaconipages.WarenkorbPage.removeItemFromTheCart(WarenkorbPage.java:25)
-	at fltests.T2AddNichePerfumeTest.test2(T2AddNichePerfumeTest.java:31)
+	at fltests.T2AddNichePerfumeTest.test2(T2AddNichePerfumeTest.java:30)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
