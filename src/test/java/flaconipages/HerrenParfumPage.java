@@ -13,17 +13,12 @@ import static org.fluentlenium.assertj.FluentLeniumAssertions.assertThat;
 
 public class HerrenParfumPage extends FluentPage{
 
-    @FindBy(xpath = "//div[@class='side-nav']//a[contains(text(), 'Herrenparfum')]/following::a[contains(text(),'Nischendüfte')]")
-    private FluentWebElement nischenDüfte;
+    @FindBy(xpath = "//div[@class='side-nav']//a[contains(text(), 'Herrenparfum')]/following::a[contains(text(),'Nischend')]")
+    private FluentWebElement nischenDuefte;
 
-    public void nischenDüfteSelection() {
-        await().atMost(5, TimeUnit.SECONDS).until(nischenDüfte).clickable();
-        nischenDüfte.click();
-    }
-
-    @Override
-    public void isAt() {
-        assertThat(window().title()).contains("All User");
+    public void nischenDuefteSelection() {
+        await().atMost(5, TimeUnit.SECONDS).until(nischenDuefte).clickable();
+        nischenDuefte.click();
     }
 
 }

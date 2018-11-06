@@ -21,11 +21,6 @@ public class ParfumPage extends FluentPage{
         herrenParfum.click();
     }
 
-//    @Override
-//    public void isAt() {
-//        assertThat(window().title()).contains("All User");
-//    }
-
 }
 
 
