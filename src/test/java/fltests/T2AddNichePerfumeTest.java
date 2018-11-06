@@ -5,7 +5,6 @@ import org.junit.Assert;
 import org.junit.Test;
 import utils.FluentLeniumTest;
 
-import static junit.framework.TestCase.assertTrue;
 
 
 public class T2AddNichePerfumeTest extends FluentLeniumTest {
